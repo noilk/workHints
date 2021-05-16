@@ -1,0 +1,22 @@
+== Log
+git log 
+git log --oneline
+git log --oneline --all  # коммиты всех веток
+
+=== Tags
+
+git tag <tag>
+git tag -d
+git push --tags
+git push --delete origin <tags>
+
+=== Stash
+git stash - спрятать изменения
+git stash list - посомтреть все спрятанные изменения
+git stash push <file> - добавить файл в stash 
+git stash pop stash@{0}- применить изменения из указанного stash
+
+== Cherry Pick ( перенос отдельного комита в свою ветку )
+git cherry-pick <commit HASH> # перенесет комит указанного хэша
+git cherry-pick <branch name> # перенесет последний комит из указанной ветки
+git cherry-pick ..<branch name> # перенесет все комиты указнной ветки
